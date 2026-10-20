@@ -1,0 +1,34 @@
+print("===================================")
+print("       CALCULADORA FINANCEIRA")
+print("===================================")
+
+nome = input("Digite seu nome: ")
+
+valor1 = float(input("Digite o primeiro valor: "))
+descricao1 = input("Digite a descrição do primeiro valor: ")
+
+valor2 = float(input("Digite o segundo valor: "))
+descricao2 = input("Digite a descrição do segundo valor: ")
+
+print("\n========== RESULTADOS ==========")
+
+print(f"\n{descricao1}: R$ {valor1:.2f}")
+print(f"{descricao2}: R$ {valor2:.2f}")
+
+print(f"\nSoma: R$ {valor1 + valor2:.2f}")
+print(f"Diferença: R$ {valor1 - valor2:.2f}")
+print(f"Multiplicação: R$ {valor1 * valor2:.2f}")
+
+if valor2 != 0:
+    print(f"Divisão: R$ {valor1 / valor2:.2f}")
+else:
+    print("Divisão: não é possível dividir por zero.")
+
+if valor1 > valor2:
+    print(f"\n{descricao1} é maior que {descricao2}.")
+elif valor1 < valor2:
+    print(f"\n{descricao2} é maior que {descricao1}.")
+else:
+    print("\nOs dois valores são iguais.")
+
+print(f"\nObrigado, {nome}!")
